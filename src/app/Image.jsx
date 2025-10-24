@@ -9,28 +9,34 @@ const Image = () => {
           html, body {
             margin: 0 !important;
             padding: 0 !important;
-            height: 100% !important;
+            height: auto !important;
             overflow: auto !important;
             background: none !important;
           }
           #root {
             margin: 0 !important;
             padding: 0 !important;
-            height: 100% !important;
+            height: auto !important;
+          }
+          .full-width-image {
+            width: 100vw;
+            height: auto;
+            display: block;
+            max-width: 100vw;
           }
         `}
       </style>
-      <div
+      <img
+        src={bfisImage}
+        alt="Brookfield School Design"
+        className="full-width-image"
         style={{
           width: "100vw",
-          height: "300vh",
-          backgroundImage: `url(${bfisImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center top",
-          backgroundRepeat: "no-repeat",
-          backgroundAttachment: "scroll",
+          height: "auto",
+          display: "block",
           margin: 0,
           padding: 0,
+          maxWidth: "100vw",
         }}
       />
     </>
