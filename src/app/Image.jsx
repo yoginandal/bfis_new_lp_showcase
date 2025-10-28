@@ -1,5 +1,5 @@
 import React from "react";
-import bfisImage from "../assets/bfis_lp_image.jpeg";
+import bfisImage from "../assets/bfis_lp_image.png";
 
 const Image = () => {
   return (
